@@ -1,0 +1,134 @@
+# ATS Compatibility Report
+
+**Candidate:** {{ resume.contact_info.full_name or "N/A" }}
+**Target Role:** {{ jd.job_title or "N/A" }}{% if jd.company_name %} at {{ jd.company_name }}{% endif +%}
+**Generated:** {{ generated_at }}
+
+---
+
+## Executive Summary
+
+**ATS Score: {{ report.ats_score }} / 100**
+
+{{ report.summary }}
+
+## Score Breakdown
+
+| Category | Score | Weight |
+|---|---|---|
+| Keyword Match | {{ report.match_breakdown.keyword_match }}% | 30% |
+| Skills Match | {{ report.match_breakdown.skills_match }}% | 25% |
+| Experience Match | {{ report.match_breakdown.experience_match }}% | 20% |
+| Project Match | {{ report.match_breakdown.project_match }}% | 10% |
+| Education Match | {{ report.match_breakdown.education_match }}% | 10% |
+| Formatting | {{ report.match_breakdown.formatting_score }}% | 5% |
+
+## Strengths
+
+{% for s in report.strengths -%}
+- {{ s }}
+{% endfor %}
+
+## Weaknesses
+
+{% for w in report.weaknesses -%}
+- {{ w }}
+{% endfor %}
+
+## Missing Keywords
+
+{% if report.missing_keywords -%}
+{% for k in report.missing_keywords -%}
+- {{ k }}
+{% endfor %}
+{%- else %}
+None -- great keyword coverage.
+{% endif %}
+
+## Missing Skills
+
+{% if report.missing_skills -%}
+{% for k in report.missing_skills -%}
+- {{ k }}
+{% endfor %}
+{%- else %}
+None -- all required/preferred skills are present.
+{% endif %}
+
+## Weak Bullet Points
+
+{% if report.weak_bullet_points -%}
+{% for b in report.weak_bullet_points %}
+- **Original:** {{ b.original }}
+  **Issue:** {{ b.reason }}
+{% endfor %}
+{%- else %}
+No weak bullet points detected.
+{% endif %}
+
+## Formatting Issues
+
+{% if report.formatting_issues -%}
+{% for f in report.formatting_issues -%}
+- [{{ f.severity }}] {{ f.issue }}
+{% endfor %}
+{%- else %}
+No formatting issues detected.
+{% endif %}
+
+---
+
+## Recommended Improvements
+
+### Improved Professional Summary
+
+{{ improved.improved_summary }}
+
+### Recommended Skills to Add
+
+{% for s in improved.recommended_missing_skills -%}
+- {{ s }}
+{% endfor %}
+
+### Recommended Keywords to Incorporate
+
+{% for k in improved.recommended_keywords -%}
+- {{ k }}
+{% endfor %}
+
+### Improved Bullet Points
+
+{% for exp in improved.improved_experience %}
+**{{ exp.job_title }} at {{ exp.company }}**
+{% for b in exp.improved_bullets %}
+- {{ b.improved }}
+{% endfor %}
+{% endfor %}
+
+### Improved Projects
+
+{% for proj in improved.improved_projects %}
+**{{ proj.name }}**
+{% for b in proj.improved_bullets %}
+- {{ b.improved }}
+{% endfor %}
+{% endfor %}
+
+### Key Achievements
+
+{% for a in improved.achievements -%}
+- {{ a }}
+{% endfor %}
+
+---
+
+## Next Steps
+
+1. Add the missing keywords and skills above where truthful.
+2. Replace weak bullet points with the improved versions.
+3. Update your professional summary to the version above.
+4. Re-run this report after edits to confirm your new ATS score.
+
+{% if improved.notes %}
+> {{ improved.notes }}
+{% endif %}

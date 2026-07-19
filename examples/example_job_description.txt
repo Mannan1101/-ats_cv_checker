@@ -1,0 +1,40 @@
+Senior Backend Engineer
+Company: Meridian Cloud Technologies
+Location: Remote (US)
+
+ABOUT THE ROLE
+We are looking for a Senior Backend Engineer to join our platform team and
+help scale our core API services. You will design and build distributed
+systems that process millions of requests per day, mentor junior engineers,
+and collaborate closely with product and infrastructure teams.
+
+RESPONSIBILITIES
+- Design, build, and maintain scalable RESTful and gRPC APIs in Python
+- Own the reliability and performance of core backend services
+- Architect data pipelines for high-throughput event processing
+- Write and review code with a strong emphasis on testing and observability
+- Mentor junior and mid-level engineers on system design and best practices
+- Collaborate with DevOps on CI/CD, containerization, and cloud deployments
+- Participate in on-call rotation and incident response
+
+REQUIREMENTS
+- 5+ years of professional software engineering experience
+- Strong proficiency in Python and at least one modern web framework
+  (FastAPI, Django, or Flask)
+- Deep experience with PostgreSQL or another relational database
+- Hands-on experience with Docker and Kubernetes in production
+- Experience with AWS (or another major cloud provider)
+- Solid understanding of REST API design and microservices architecture
+- Experience with CI/CD pipelines and automated testing (pytest)
+- Bachelor's degree in Computer Science or related field, or equivalent experience
+
+PREFERRED QUALIFICATIONS
+- Experience with event-driven architectures (Kafka, SQS, or similar)
+- Familiarity with Terraform or other infrastructure-as-code tools
+- Experience with GraphQL
+- Prior experience mentoring engineers or leading small technical initiatives
+- Contributions to open source projects
+
+WHAT WE OFFER
+Competitive salary, equity, remote-first culture, and a strong engineering
+mentorship program.

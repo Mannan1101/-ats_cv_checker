@@ -1,0 +1,41 @@
+Jordan Ellis
+jordan.ellis@email.com | (555) 219-4471 | Austin, TX
+linkedin.com/in/jordanellis | github.com/jordanellis
+
+PROFESSIONAL SUMMARY
+Backend-leaning software engineer with 4 years of experience building REST
+APIs and data pipelines in Python. Enjoys shipping reliable services and
+working closely with product teams.
+
+SKILLS
+Python, Flask, PostgreSQL, Docker, Git, REST APIs, pandas, Linux, pytest
+
+EXPERIENCE
+Software Engineer — Brightline Systems
+Jun 2022 - Present
+- Responsible for maintaining a Flask-based internal billing API
+- Helped with migrating the reporting database from MySQL to PostgreSQL
+- Worked on a nightly ETL job that syncs data from three vendor APIs
+- Fixed several bugs in the customer notification service
+
+Junior Developer — Northwind Data Co.
+Jul 2020 - May 2022
+- Assisted the senior team with writing unit tests for the payments module
+- Built a small internal CLI tool used by the support team to look up orders
+- Participated in on-call rotation and incident triage
+
+PROJECTS
+Order Tracker CLI
+A command-line tool for support staff to search orders by customer email.
+Technologies: Python, SQLite, Click
+
+Personal Blog Backend
+Small Flask app serving a personal blog with a Markdown-based CMS.
+Technologies: Flask, SQLite, Jinja2
+
+EDUCATION
+B.S. in Computer Science — University of Texas at Austin
+2016 - 2020
+
+CERTIFICATIONS
+AWS Certified Cloud Practitioner — Amazon Web Services — 2023
