@@ -21,6 +21,7 @@ from dotenv import load_dotenv
 from ats_agents import database_agent
 from ats_agents.coordinator import run_pipeline
 from models.schemas import ATSAnalysisReport, MatchBreakdown, PipelineResult
+from services.database import init_db
 
 load_dotenv()
 
@@ -97,7 +98,7 @@ st.markdown(
 
 def run_async(coro):
     return asyncio.run(coro)
-
+run_async(init_db())
 
 def save_uploaded_file(uploaded_file) -> Path:
     suffix = Path(uploaded_file.name).suffix or ".txt"
